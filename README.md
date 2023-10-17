@@ -1,2 +1,5 @@
 # flightsimulations-
-Welcome! Here we will be building out a tool to visualize and analyze the differences in real versus simulated data from drone flights.
+Welcome! Here we will be building out a tool to visualize and analyze the differences in real versus simulated data from drone flights. This is a contracted project, and the data has been anonymized for company privacy. 
+
+Notes:
+I used Plotly for visualizations of launch, delivery, and recovery largely because of its dynamic 3D nature and ability to rotate, zoom, and scale very easily (compared to Matplotlib which is completely static. I initially tried out Matplotlib but was disappointed by its limited viewing flexibility with 3d graphs). I discovered Plotly and learned how to use it while doing this project, so there are definitely graph optimizations I could make. I also used MovingPandas at the very end, for a clustered 2D visualization of cruise trajectories, purely because it was the only library that allowed for the clustered visualization of the huge data size that the cruise stage took up. This was purely an optional addition, because we weren’t concerned with cruise data for this assignment, but I still had a good time trying it out.
